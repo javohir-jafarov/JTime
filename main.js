@@ -1,5 +1,5 @@
 let soat = document.querySelector('.hour')
-let daqiqa = document.querySelector('.min')
+let daqiqa = document.querySelector('.minChild')
 let soniya = document.querySelector('.sec')
 
 
