@@ -9,7 +9,8 @@
 }
 body{
     min-height: 100vh;
-    background: #000;
+    background: url(https://cdnb.artstation.com/p/assets/images/images/048/635/917/large/regina-pang-sunroofattic-night.jpg?1650540977);
+    
     font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
