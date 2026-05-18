@@ -10,7 +10,7 @@
 body{
     min-height: 100vh;
     background-blend-mode:  black;
-    background: url(https://cdnb.artstation.com/p/assets/images/images/048/635/917/large/regina-pang-sunroofattic-night.jpg?1650540977);
+    background: url(https://media.moddb.com/images/games/1/37/36810/7.jpg);
     background-size: cover;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -54,7 +54,7 @@ body{
 }
 
 .countdown div {
-    background: linear-gradient(170deg, rgba(186, 186, 186, 0.35), rgba(0, 0, 0, 0.85));
+    background: rgba(0, 0, 0, 0.85);
     height: 33vh;
     display: flex;
     aspect-ratio: 1;
