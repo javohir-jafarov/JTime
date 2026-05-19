@@ -6,6 +6,8 @@ let burger = document.querySelector('#burger')
 let menu = document.querySelector('#menu')
 let close = document.querySelector('#close')
 
+let options = document.querySelector('#options')
+
 let clock = () => {
     let date = new Date()
     let hour = String(date.getHours()).padStart(2, '0')
@@ -26,9 +28,11 @@ let sandwich = () => {
     if (isActive == true) {
         menu.style.display = 'none'
         close.style.display = 'flex'
+        options.style.width = '100%'
     } else {
         menu.style.display = 'flex'
         close.style.display = 'none'
+        options.style.width = '0'
     }
 }
 
