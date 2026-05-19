@@ -58,7 +58,7 @@ body{
 
 .countdown div {
     background: var(--main-color);
-    min-height: 33vh;
+    min-height: 330px;
     display: flex;
     aspect-ratio: 1;
     align-items: center;
@@ -70,12 +70,13 @@ body{
 }
 
 .countdown .sec{
+    content: '';
     position: absolute;
     width: 0px;
     height: 0px;
     font-size: 16px;
     right: 25px;
-    bottom: 25px;
+    bottom: 0px;
 }
 
 #options{
