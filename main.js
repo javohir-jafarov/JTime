@@ -8,12 +8,14 @@ let close = document.querySelector('#close')
 
 let options = document.querySelector('#options')
 
+let colorPicker = document.querySelector('#colorPicker')
+
 let clock = () => {
     let date = new Date()
     let hour = String(date.getHours()).padStart(2, '0')
     let min = String(date.getMinutes()).padStart(2, '0')
     let sec = String(date.getSeconds()).padStart(2, '0')
-    
+
     soat.innerText = hour
     daqiqa.innerText = min
     soniya.innerText = sec
@@ -36,4 +38,9 @@ let sandwich = () => {
     }
 }
 
-burger.addEventListener('mousedown', sandwich)
+burger.addEventListener('mousedown', sandwich);
+
+
+colorPicker.addEventListener('input', (event) => {
+    document.documentElement.style.setProperty('--main-color', event.target.value + 'BF')
+})
