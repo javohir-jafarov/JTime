@@ -81,11 +81,12 @@ body{
     height: 100vh;
     position: absolute;
     right: 0;
-    background: var(--main-color);
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
+    background: black;
     overflow-x: hidden;
+    overflow-y: auto;
     z-index: 9;
     transition: .2s;
+    color: white
 }
+
 
