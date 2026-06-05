@@ -11,7 +11,9 @@ let options = document.querySelector('#options')
 
 let colorPicker = document.querySelector('#colorPicker')
 
-let images = document.querySelector('#images')
+let images = document.querySelector('#images');
+
+let ownImageInp = document.querySelector('#ownImage')
 
 let clock = () => {
     let date = new Date()

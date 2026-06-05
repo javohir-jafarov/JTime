@@ -116,3 +116,15 @@ body {
     border-radius: 10px;
     padding: 5px;
 }
+
+#options .bg-image form {
+    width: fit-content;
+    aspect-ratio: 20 / 1;
+}
+#options .bg-image form #ownImage{
+    width: 75%;
+    ;
+}
+#options .bg-image form     button{
+    width: 50px;
+}
