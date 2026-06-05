@@ -1,17 +1,18 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
 
-:root{
+:root {
     --main-color: rgba(16, 16, 16, 0.85)
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
 }
-body{
+
+body {
     min-height: 100vh;
     background: url(https://cdnb.artstation.com/p/assets/images/images/048/635/917/large/regina-pang-sunroofattic-night.jpg?1650540977);
     background-size: cover;
@@ -38,9 +39,10 @@ body{
     z-index: 10;
 }
 
-#close{
+#close {
     display: none;
 }
+
 .countdown {
     width: 100%;
     height: fit-content;
@@ -56,7 +58,7 @@ body{
     cursor: default;
 }
 
-.countdown > div {
+.countdown>div {
     background: var(--main-color);
     min-height: 250px;
     display: flex;
@@ -64,22 +66,24 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-    font-weight:600;
+    font-weight: 600;
     font-size: 144px;
     position: relative;
 }
 
-.countdown .sec{
+.countdown .sec {
     position: absolute;
     font-size: 16px;
     right: 12.5px;
     bottom: 12.5px;
 }
 
-#options{
-    width: 0px;
-    height: 100vh;
+#options {
+    width: 0;
+    /* mana shu yerni uzgartir*/
+    height: 0;
     position: absolute;
+    top: 0;
     right: 0;
     background: black;
     overflow-x: hidden;
@@ -89,4 +93,23 @@ body{
     color: white
 }
 
+#options::-webkit-scrollbar {
+    display: none;
+}
 
+
+#options .bg-image .images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+}
+
+
+#options .bg-image .images img {
+    width: calc((100% / 5) - 20px);
+    aspect-ratio: 16 / 10;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    border-radius: 10px;
+}

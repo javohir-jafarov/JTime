@@ -10,6 +10,8 @@ let options = document.querySelector('#options')
 
 let colorPicker = document.querySelector('#colorPicker')
 
+let images = document.querySelector('#images')
+
 let clock = () => {
     let date = new Date()
     let hour = String(date.getHours()).padStart(2, '0')
@@ -31,10 +33,12 @@ let sandwich = () => {
         menu.style.display = 'none'
         close.style.display = 'flex'
         options.style.width = '100%'
+        options.style.height = '100vh'
     } else {
         menu.style.display = 'flex'
         close.style.display = 'none'
         options.style.width = '0'
+        options.style.height = '0'
     }
 }
 
@@ -44,3 +48,25 @@ burger.addEventListener('mousedown', sandwich);
 colorPicker.addEventListener('input', (event) => {
     document.documentElement.style.setProperty('--main-color', event.target.value + 'BF')
 })
+
+
+let BgImages = [
+    {
+        image: '/images/dara.png'
+    },
+    {
+        image: './images/edge_background.jpg'
+    },
+    {
+        image: './images/purple-city.jpg'
+    }
+]
+
+
+for (let i = 0; i < BgImages.length; i++) {
+   images.innerHTML += `<img src="${BgImages[i].image}" alt="">`
+
+   console.log(BgImages[i].image)
+
+}
+
