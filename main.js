@@ -55,18 +55,12 @@ let BgImages = [
         image: '/images/dara.png'
     },
     {
-        image: './images/edge_background.jpg'
+        image: '/images/edge_background.jpg'
     },
     {
-        image: './images/purple-city.jpg'
+        image: '/images/purple-city.jpg'
     }
 ]
 
 
-for (let i = 0; i < BgImages.length; i++) {
-   images.innerHTML += `<img src="${BgImages[i].image}" alt="">`
-
-   console.log(BgImages[i].image)
-
-}
 
