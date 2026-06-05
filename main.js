@@ -65,7 +65,31 @@ let BgImages = [
     },
     {
         image: '/images/purple-city.jpg'
-    }
+    },
+    {
+        image: '/images/cozyCar.jpeg'
+    },
+    {
+        image: '/images/image1.webp'
+    },
+    {
+        image: '/images/image2.webp'
+    },
+    {
+        image: '/images/image3.webp'
+    },
+    {
+        image: '/images/image4.webp'
+    },
+    {
+        image: '/images/image5.webp'
+    },
+    {
+        image: '/images/image6.webp'
+    },
+    {
+        image: '/images/islandMacOS.jpg'
+    },
 ]
 
 for (let i = 0; i < BgImages.length; i++) {
