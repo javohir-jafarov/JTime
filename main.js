@@ -1,3 +1,4 @@
+let body = document.body
 let soat = document.querySelector('.hour')
 let daqiqa = document.querySelector('.minChild')
 let soniya = document.querySelector('.sec')
@@ -43,6 +44,11 @@ let sandwich = () => {
 }
 
 burger.addEventListener('mousedown', sandwich);
+window.addEventListener('keydown', (e) => {
+    if(e.key == 'm') {
+        sandwich()
+    }
+})
 
 
 colorPicker.addEventListener('input', (event) => {
@@ -62,5 +68,13 @@ let BgImages = [
     }
 ]
 
+for (let i = 0; i < BgImages.length; i++) {
+    images.innerHTML += `
+        <img src="${BgImages[i].image}" alt="" onclick="addUrl('${BgImages[i].image}')">
+    `
+}
 
+let addUrl = (url) => {
+    body.style.backgroundImage = `url(${url})`
+}
 
