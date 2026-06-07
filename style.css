@@ -14,14 +14,13 @@
 
 body {
     min-height: 100vh;
-    /* background: url(https://cdnb.artstation.com/p/assets/images/images/048/635/917/large/regina-pang-sunroofattic-night.jpg?1650540977); */
-    background: #000;
+    background-color: #000;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
-    position: relative;
+    /* position: relative; */
 }
 
 #burger {
@@ -29,7 +28,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     color: white;
@@ -96,9 +95,7 @@ body {
     color: white
 }
 
-#options::-webkit-scrollbar {
-    display: none;
-}
+
 
 
 #options .bg-image .images {
@@ -124,7 +121,7 @@ body {
 }
 #options .bg-image .form #ownImage{
     width: 75%;
-    ;
+    
 }
 #options .bg-image .form     button{
     width: 50px;

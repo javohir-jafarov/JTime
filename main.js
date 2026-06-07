@@ -13,12 +13,14 @@ let colorPicker = document.querySelector('#colorPicker')
 
 let images = document.querySelector('#images');
 
-let ownImageInp = document.querySelector('#ownImage') // input bu
-let inpAddBtn = document.querySelector('.inpAddBtn')
+let ownImageInp = document.querySelector('#ownImage')
+let ownImageAddBtn = document.querySelector('#ownImageAddBtn')
 
+console.log(body.style.background);
 
-inpAddBtn.addEventListener(() => {
-    console.log(ownImageInp)
+ownImageAddBtn.addEventListener('click', () => {
+    body.style.backgroundImage = `url('${ownImageInp.value}')`
+    
 })
 
 
