@@ -13,7 +13,15 @@ let colorPicker = document.querySelector('#colorPicker')
 
 let images = document.querySelector('#images');
 
-let ownImageInp = document.querySelector('#ownImage')
+let ownImageInp = document.querySelector('#ownImage') // input bu
+let inpAddBtn = document.querySelector('.inpAddBtn')
+
+
+inpAddBtn.addEventListener(() => {
+    console.log(ownImageInp)
+})
+
+
 
 let clock = () => {
     let date = new Date()
@@ -36,12 +44,10 @@ let sandwich = () => {
         menu.style.display = 'none'
         close.style.display = 'flex'
         options.style.width = '100%'
-        options.style.height = '100vh'
     } else {
         menu.style.display = 'flex'
         close.style.display = 'none'
         options.style.width = '0'
-        options.style.height = '0'
     }
 }
 
@@ -64,9 +70,6 @@ let BgImages = [
     },
     {
         image: '/images/edge_background.jpg'
-    },
-    {
-        image: '/images/purple-city.jpg'
     },
     {
         image: '/images/cozyCar.jpeg'

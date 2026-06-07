@@ -14,7 +14,8 @@
 
 body {
     min-height: 100vh;
-    background: url(https://cdnb.artstation.com/p/assets/images/images/048/635/917/large/regina-pang-sunroofattic-night.jpg?1650540977);
+    /* background: url(https://cdnb.artstation.com/p/assets/images/images/048/635/917/large/regina-pang-sunroofattic-night.jpg?1650540977); */
+    background: #000;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
@@ -83,7 +84,7 @@ body {
 #options {
     width: 0;
     /* mana shu yerni uzgartir*/
-    height: 0;
+    height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
@@ -117,14 +118,14 @@ body {
     padding: 5px;
 }
 
-#options .bg-image form {
+#options .bg-image .form {
     width: fit-content;
     aspect-ratio: 20 / 1;
 }
-#options .bg-image form #ownImage{
+#options .bg-image .form #ownImage{
     width: 75%;
     ;
 }
-#options .bg-image form     button{
+#options .bg-image .form     button{
     width: 50px;
 }
