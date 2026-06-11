@@ -82,6 +82,8 @@ body {
 }
 
 #options {
+    padding: 10px;
+    padding-top: 50px;
     width: 0;
     /* mana shu yerni uzgartir*/
     height: 100vh;
@@ -90,25 +92,30 @@ body {
     right: 0;
     background: black;
     overflow: hidden;
-    /* overflow-y: auto; */
+    overflow-y: auto;
     z-index: 9;
     transition: .2s;
-    color: white
+    color: white;
 }
+#options h1{display: inline;}
 
 
-
+#options .bg-image{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 #options .bg-image .images {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 10px;
+    justify-content: center;
 }
 
 
 #options .bg-image .images img {
-    width: calc((100% / 5) - 20px);
+    width: 200px;
     aspect-ratio: 16 / 10;
     border: 2px solid var(--main-color);
     cursor: pointer;
@@ -119,7 +126,6 @@ body {
 #options .bg-image #form {
     width: auto;
     aspect-ratio: 20 / 1;
-    margin: 10px;
 
 }
 #options .bg-image #form #ownImage{
@@ -133,6 +139,7 @@ body {
 }
 
 
+
 #options .bg-image #form  button{
     width: 50px;
     background: var(--main-color);
@@ -141,6 +148,19 @@ body {
     width: 100px;
     height: 50px;
     cursor: pointer;
+}
+#options .bg-image #form  button:hover{
+    opacity: .9;
+}
+#options .bg-image #form  button:active{
+    opacity: 1;
+}
+
+#option .color{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 #option .color input{
