@@ -82,7 +82,6 @@ body {
 }
 
 #options {
-    padding: 10px;
     padding-top: 50px;
     width: 0;
     /* mana shu yerni uzgartir*/
@@ -90,7 +89,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    background: black;
+    background: rgba(0, 0, 0, 0.635);
     overflow: hidden;
     overflow-y: auto;
     z-index: 9;
@@ -104,13 +103,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 10px;
 }
 
 #options .bg-image .images {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    justify-content: left;
 }
 
 
@@ -161,6 +161,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+    padding: 100px;
 }
 
 #option .color input{
